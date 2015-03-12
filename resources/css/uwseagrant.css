@@ -1,0 +1,20 @@
+#logoGraphic {
+	background-image: url('../media/logo_seagrant.png');
+	background-repeat: no-repeat;
+	width: 121px;
+	height: 102px;
+	padding: 0px 10px 0px 0px;
+	margin-top: -10px;
+}
+
+.searchBox {
+	top: 85px;
+}
+
+#container {
+	margin-top: 20px;
+}
+
+.uwseagrantIcon {
+	background: url("../media/ogp-institutions.png") no-repeat scroll -55px -34px transparent;
+}
