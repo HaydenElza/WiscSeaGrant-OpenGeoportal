@@ -205,8 +205,14 @@ OpenGeoportal.TableItems = function TableItems() {
 		return template.genericControl(params);
 	};
 
-	this.renderDownloadControl = function(isChecked) {
-		return template.defaultDownloadCheckbox({isChecked: isChecked});
+	this.renderDownloadControl = function(location) {
+		if (location.hasOwnProperty("fileDownload")) {
+			//you should externalize this to an html template (use an existing one if possible)
+			return '<div class="downloadControl"></div>';
+		} else {
+			//if the key is not present, don't render a control
+			return "";
+		}
 	};
 
 };

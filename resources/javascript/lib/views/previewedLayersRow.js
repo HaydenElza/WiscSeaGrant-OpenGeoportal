@@ -13,7 +13,8 @@ if (typeof OpenGeoportal.Views === 'undefined') {
 OpenGeoportal.Views.PreviewedLayersRow = OpenGeoportal.Views.LayerRow.extend({
 
 	subClassEvents: {
-		"click .saveControl" : "toggleSave"
+		"click .saveControl" : "toggleSave",
+		"click .downloadControl": "downloadFile"
 	},
 	subClassInit: function(){
 		//listen for saved items (in cart collection)
@@ -41,5 +42,16 @@ OpenGeoportal.Views.PreviewedLayersRow = OpenGeoportal.Views.LayerRow.extend({
 			return true;
 		}
 		return false;
+	},
+
+	downloadFile: function(){
+		var location = this.model.get("Location");
+		if (location.hasOwnProperty("fileDownload")){
+			var url = this.model.get("Location").fileDownload;
+			OpenGeoportal.ogp.widgets.iframeDownload("directDownload", url);
+		} else {
+		//notify the user that fileDownload is not available, but it should never get here
+		}
 	}
+
 });

@@ -297,9 +297,7 @@ OpenGeoportal.Views.SearchResultsTable = OpenGeoportal.Views.LayerTable
 										return that.tableControls
 												.renderExpandControl(showControls);
 									}
-
-								},
-								{
+								}, {
 									order : 1,
 									columnName : "Save",
 									resizable : false,
@@ -319,121 +317,111 @@ OpenGeoportal.Views.SearchResultsTable = OpenGeoportal.Views.LayerTable
 										if (typeof selModel !== 'undefined') {
 											stateVal = true;
 										}
-													
-										
 										return that.tableControls.renderSaveControl(stateVal);
 									}
-									},
-									{
-										order : 2,
-										columnName : "DataType",
-										resizable : false,
-										organize : "group",
-										visible : true,
-										hidable : true,
-										displayName : "Data Type",
-										header : "Type",
-										columnClass : "colType",
-										width : 30,
-										modelRender : function(model) {
-											var dataType = model.get("DataType");
-											return that.tableControls.renderTypeIcon(dataType);
-										}
-
-									}, {
-										order : 3,
-										columnName : "score",
-										resizable : true,
-										minWidth : 27,
-										width : 27,
-										organize : "numeric",
-										visible : false,
-										hidable : false,
-										displayName : "Relevancy",
-										header : "Relev",
-										columnClass : "colScore"
-									}, {
-										order : 4,
-										columnName : "LayerDisplayName",
-										resizable : true,
-										minWidth : 35,
-										width : 200,
-										organize : "alpha",
-										visible : true,
-										hidable : false,
-										displayName : "Name",
-										header : "Name",
-										columnClass : "colTitle"
-									}, {
-										order : 5,
-										columnName : "Originator",
-										resizable : true,
-										minWidth : 62,
-										width : 86,
-										organize : "group",
-										visible : true,
-										hidable : true,
-										displayName : "Originator",
-										header : "Originator",
-										columnClass : "colOriginator"
-
-									}, {
-										order : 6,
-										columnName : "Publisher",
-										resizable : true,
-										minWidth : 58,
-										width : 80,
-										organize : "group",
-										visible : false,
-										hidable : true,
-										displayName : "Publisher",
-										header : "Publisher",
-										columnClass : "colPublisher"
-
-									}, {
-										order : 7,
-										columnName : "ContentDate",
-										organize : "numeric",
-										visible : false,
-										displayName : "Date",
-										resizable : true,
-										minWidth : 30,
-										width : 30,
-										hidable : true,
-										header : "Date",
-										columnClass : "colDate",
-										modelRender : function(model) {
-											var date = model.get("ContentDate");
-											return that.tableControls.renderDate(date);
-										}
-
-									}, {
-										order : 8,
-										columnName : "Institution",
-										organize : "alpha",
-										visible : true,
-										hidable : true,
-										resizable : false,
-										displayName : "Repository",
-										header : "Rep",
-										columnClass : "colSource",
-										width : 24,
-										modelRender : function(model) {
-											var repository = model.get("Institution");
-											return that.tableControls.renderRepositoryIcon(repository);
-
-										}
-
-									}, {
-										order : 9,
-										columnName : "Access",
-										resizable : false,
-										organize : false,
-										visible : false,
-										hidable : false,
-										header : "Access"
-									}, 
-								{
+								}, {
+									order : 2,
+									columnName : "DataType",
+									resizable : false,
+									organize : "group",
+									visible : true,
+									hidable : true,
+									displayName : "Data Type",
+									header : "Type",
+									columnClass : "colType",
+									width : 30,
+									modelRender : function(model) {
+										var dataType = model.get("DataType");
+										return that.tableControls.renderTypeIcon(dataType);
+									}
+								}, {
+									order : 3,
+									columnName : "score",
+									resizable : true,
+									minWidth : 27,
+									width : 27,
+									organize : "numeric",
+									visible : false,
+									hidable : false,
+									displayName : "Relevancy",
+									header : "Relev",
+									columnClass : "colScore"
+								}, {
+									order : 4,
+									columnName : "LayerDisplayName",
+									resizable : true,
+									minWidth : 35,
+									width : 200,
+									organize : "alpha",
+									visible : true,
+									hidable : false,
+									displayName : "Name",
+									header : "Name",
+									columnClass : "colTitle"
+								}, {
+									order : 5,
+									columnName : "Originator",
+									resizable : true,
+									minWidth : 62,
+									width : 86,
+									organize : "group",
+									visible : true,
+									hidable : true,
+									displayName : "Originator",
+									header : "Originator",
+									columnClass : "colOriginator"
+								}, {
+									order : 6,
+									columnName : "Publisher",
+									resizable : true,
+									minWidth : 58,
+									width : 80,
+									organize : "group",
+									visible : false,
+									hidable : true,
+									displayName : "Publisher",
+									header : "Publisher",
+									columnClass : "colPublisher"
+								}, {
+									order : 7,
+									columnName : "ContentDate",
+									organize : "numeric",
+									visible : false,
+									displayName : "Date",
+									resizable : true,
+									minWidth : 30,
+									width : 30,
+									hidable : true,
+									header : "Date",
+									columnClass : "colDate",
+									modelRender : function(model) {
+										var date = model.get("ContentDate");
+										return that.tableControls.renderDate(date);
+									}
+								}, {
+									order : 8,
+									columnName : "Institution",
+									organize : "alpha",
+									visible : true,
+									hidable : true,
+									resizable : false,
+									displayName : "Repository",
+									header : "Rep",
+									columnClass : "colSource",
+									width : 24,
+									modelRender : function(model) {
+										var repository = model.get("Institution");
+										return that.tableControls.renderRepositoryIcon(repository);
+									}
+								}, {
+									order : 9,
+									columnName : "Access",
+									resizable : false,
+									organize : false,
+									visible : false,
+									hidable : false,
+									header : "Access"
+								}, {
 									order : 10,
 									columnName : "Metadata",
 									resizable : false,
@@ -446,8 +434,7 @@ OpenGeoportal.Views.SearchResultsTable = OpenGeoportal.Views.LayerTable
 									modelRender : function(model) {
 										return that.tableControls.renderMetadataControl();
 									}
-								},
-								{
+								}, {
 									order : 11,
 									columnName : "View",
 									resizable : false,
@@ -490,7 +477,23 @@ OpenGeoportal.Views.SearchResultsTable = OpenGeoportal.Views.LayerTable
 
 										return that.tableControls.renderPreviewControl(previewable, hasAccess, canLogin, stateVal);
 									}
-								} ]);
+								}, {
+									order : 12,
+									columnName : "Download",
+									resizable : false,
+									organize : false,
+									visible : true,
+									hidable : false,
+									header : "Download",
+									//header : "<div class=”downloadIcon”></div>",
+									columnClass : "colDownload",
+									width : 30,
+									modelRender : function(model) {
+										var location = model.get("Location"); //you may need other params
+									return that.tableControls.renderDownloadControl(location);
+									}
+								}
+							]);
 			}
 
 

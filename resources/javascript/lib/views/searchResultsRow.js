@@ -14,7 +14,8 @@ OpenGeoportal.Views.SearchResultsRow = OpenGeoportal.Views.LayerRow.extend({
 
 	subClassEvents : {
 		"click .saveControl" : "toggleSave",
-		"istop" : "broadcastModel"
+		"istop" : "broadcastModel",
+		"click .downloadControl": "downloadFile"
 	},
 
 	subClassInit: function(){
@@ -163,5 +164,15 @@ OpenGeoportal.Views.SearchResultsRow = OpenGeoportal.Views.LayerRow.extend({
 			this.cart.toggleCartState(this.model);
 		}
 		
+	},
+
+	downloadFile: function(){
+		var location = this.model.get("Location");
+		if (location.hasOwnProperty("fileDownload")){
+			var url = this.model.get("Location").fileDownload;
+			OpenGeoportal.ogp.widgets.iframeDownload("directDownload", url);
+		} else {
+		//notify the user that fileDownload is not available, but it should never get here
+		}
 	}
 });
