@@ -134,6 +134,23 @@ OpenGeoportal.MapController = function() {
 		var globalExtent = new OpenLayers.Control.ZoomToMaxExtent({
 			title : "Zoom to global extent"
 		});
+		
+		// Custom zoom extent for Wisconsin
+		var wiboundbox=[-10839354, 5160000, -9101306, 6014000] //Coordinates in Web Mercator
+		//var wiboundbox=[-10339354, 5234664, -9601306, 5989538]
+		var left = wiboundbox[0]
+		var bottom = wiboundbox[1]
+		var right = wiboundbox[2]
+		var top = wiboundbox[3]
+		var wisconsinbounds = new OpenLayers.Bounds(left,bottom,right,top)
+	
+		var wisconsinExtent = new OpenLayers.Control.Button({
+			displayClass: "zoomToWisconsin", trigger: function(){that.zoomToExtent(wisconsinbounds, true);},
+			type: OpenLayers.Control.TYPE_BUTTON,
+			title: "Zoom To Wisconsin", active: true
+		});
+		// End customization
+
 		var panel = new OpenLayers.Control.Panel({
 			defaultControl : panHand
 		});
@@ -142,8 +159,14 @@ OpenGeoportal.MapController = function() {
 			displayProjection : new OpenLayers.Projection("EPSG:4326")
 		});
 
-		panel.addControls([ globalExtent, nav.previous, nav.next, zoomBox,
-				panHand ]);
+		panel.addControls([ 
+				globalExtent,
+				wisconsinExtent, 
+				nav.previous, 
+				nav.next, 
+				zoomBox,
+				panHand 
+			]);
 
 		var zoomBar = new OpenLayers.Control.ModPanZoomBar();
 		var scaleLine = new OpenLayers.Control.ScaleLine();
