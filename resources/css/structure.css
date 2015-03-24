@@ -1174,7 +1174,9 @@ td.attributeName:hover {
 }
 
 iframe.download {
-	display: none;
+	cursor: pointer;
+	width: 37px;
+	height: 21px;
 }
 
 #featureInfo {
@@ -1776,4 +1778,19 @@ button.closeBubble {
 	/*border-bottom: 8px solid #4B8ACF;*/
 	top: -11px;
 	z-index: 999;
+}
+
+/* UW Sea Grant custom css */
+.downloadIcon{
+	background: url("../media/ogp-sprite-uwsg.png") no-repeat scroll -141px -116px transparent;
+	width: 11px;
+	height: 13px;
+}
+.downloadControl{
+	background: url("../media/ogp-sprite-uwsg.png") no-repeat scroll -141px -116px transparent;
+	width: 11px;
+	height: 13px; 
+}
+.downloadControl:hover {
+	cursor: pointer;
 }

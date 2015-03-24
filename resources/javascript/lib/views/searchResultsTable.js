@@ -302,7 +302,7 @@ OpenGeoportal.Views.SearchResultsTable = OpenGeoportal.Views.LayerTable
 									columnName : "Save",
 									resizable : false,
 									organize : false,
-									visible : true,
+									visible : false,
 									hidable : false,
 									header : "<div class=\"cartIconTable\" title=\"Add layers to your cart for download.\" ></div>",
 									columnClass : "colSave",
@@ -484,8 +484,7 @@ OpenGeoportal.Views.SearchResultsTable = OpenGeoportal.Views.LayerTable
 									organize : false,
 									visible : true,
 									hidable : false,
-									header : "Download",
-									//header : "<div class=”downloadIcon”></div>",
+									header : '<div class="downloadIcon"></div>',
 									columnClass : "colDownload",
 									width : 30,
 									modelRender : function(model) {
