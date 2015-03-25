@@ -298,7 +298,7 @@ OpenGeoportal.Views.SearchResultsTable = OpenGeoportal.Views.LayerTable
 												.renderExpandControl(showControls);
 									}
 								}, {
-									order : 1,
+									order : 11,
 									columnName : "Save",
 									resizable : false,
 									organize : false,
@@ -324,7 +324,7 @@ OpenGeoportal.Views.SearchResultsTable = OpenGeoportal.Views.LayerTable
 									columnName : "DataType",
 									resizable : false,
 									organize : "group",
-									visible : true,
+									visible : false,
 									hidable : true,
 									displayName : "Data Type",
 									header : "Type",
@@ -402,7 +402,7 @@ OpenGeoportal.Views.SearchResultsTable = OpenGeoportal.Views.LayerTable
 									order : 8,
 									columnName : "Institution",
 									organize : "alpha",
-									visible : true,
+									visible : false,
 									hidable : true,
 									resizable : false,
 									displayName : "Repository",
@@ -435,7 +435,7 @@ OpenGeoportal.Views.SearchResultsTable = OpenGeoportal.Views.LayerTable
 										return that.tableControls.renderMetadataControl();
 									}
 								}, {
-									order : 11,
+									order : 1,
 									columnName : "View",
 									resizable : false,
 									organize : false,

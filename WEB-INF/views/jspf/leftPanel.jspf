@@ -13,13 +13,13 @@
 						</div>
 					</div>
 			</a></li>
-			<li><a href="#cartTab">
+			<!--<li><a href="#cartTab">
 					<div id="cartTabText" class="tabText">
 						<div class="shoppingCartIcon"></div>
 						<div id="cartTabTextInner">
 							Cart <span id="savedLayersNumberTab" class="savedLayersNumber">(0)</span>
 						</div>
-					</div>
+					</div>-->
 			</a></li>
 		</ul>
 		<div id="searchTab">

@@ -84,9 +84,9 @@ OpenGeoportal.Structure = function() {
 				mode : "open"
 			});
 			// set tab to the "cart" tab
-			jQuery("#tabs").tabs({
+			/*jQuery("#tabs").tabs({
 				active : 1
-			});
+			});*/
 
 		}
 	};
@@ -101,9 +101,8 @@ OpenGeoportal.Structure = function() {
 
 						jQuery("#left_col").trigger("adjustContents");
 						var label, idx = ui.index;
-
-						label = (idx == 1) && "Cart Tab" || (idx == 0)
-								&& "Search Tab" || "Getting Started Tab";
+						/*label = (idx == 1) && "Cart Tab" || (idx == 0) && "Search Tab" || "Getting Started Tab";*/
+						label = (idx == 0) && "Search Tab" || "Getting Started Tab";
 						analytics.track("Interface", "Change Tab", label);
 					}
 
