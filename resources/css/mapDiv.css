@@ -317,21 +317,33 @@ div.olControlMousePosition {
 .zoomToWisconsinItemInactive:hover{
 	background: url("../media/ogp-sprite-uwsg.png") no-repeat scroll -31px -183px transparent;
 	/*background-image: url("../media/Wisconsin_extent_hover.png") !important;*/
-	}	
+	}
+
+.zoomToGreatLakesItemInactive{
+	background: url("../media/ogp-sprite-uwsg.png") no-repeat scroll -62px -139px transparent;
+	width: 30px;
+	height: 38px;
+	cursor: pointer;
+	}
+	
+.zoomToGreatLakesItemInactive:hover{
+	background: url("../media/ogp-sprite-uwsg.png") no-repeat scroll -62px -183px transparent;
+	/*background-image: url("../media/Wisconsin_extent_hover.png") !important;*/
+	}
 
 .zoomPlus {
 	/*background: url("../media/ogp-sprite.png") no-repeat scroll -165px -12px transparent;*/
-	background: url("../media/ogp-sprite-uwsg.png") no-repeat scroll -215px -12px transparent;
+	background: url("../media/ogp-sprite-uwsg.png") no-repeat scroll -225px -12px transparent;
 }
 
 .zoomMinus {
 	/*background: url("../media/ogp-sprite.png") no-repeat scroll -165px -240px transparent;*/
-	background: url("../media/ogp-sprite-uwsg.png") no-repeat scroll -215px -240px transparent;
+	background: url("../media/ogp-sprite-uwsg.png") no-repeat scroll -225px -240px transparent;
 }
 
 .zoomSlideBar {
 	/*background: url("../media/ogp-sprite.png") no-repeat scroll -170px -30px transparent;*/
-	background: url("../media/ogp-sprite-uwsg.png") no-repeat scroll -220px -30px transparent;
+	background: url("../media/ogp-sprite-uwsg.png") no-repeat scroll -230px -30px transparent;
 }
 
 .zoomSlider {

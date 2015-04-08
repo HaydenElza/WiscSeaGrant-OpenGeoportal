@@ -229,9 +229,9 @@ OpenGeoportal.Template = function() {
 	this.infoBubble = _.template(infoBubbleHtml);
 	
 	var welcomeTextHtml = '<div id="welcomeText" class="welcomeText">'
-		+ '<h1>Welcome</h1>' 
+		+ '<h1>Welcome to GeoData@UWSeaGrant</h1>' 
 		+ '<p>There are two ways to begin your search:</p>'
-		+ '<ol><li>Enter information using one or both search fields.</li>'
+		+ '<ol><li>Enter information using the search field.</li>'
 		+ '<li>Zoom in on a location using the map.</li></ol></div>';
 
 	this.welcomeText = _.template(welcomeTextHtml);

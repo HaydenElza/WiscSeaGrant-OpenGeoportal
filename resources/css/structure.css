@@ -1653,7 +1653,7 @@ button.closeBubble {
 
 .infoBubbleText h1 {
 	color: white;
-	font: 55px "Univers", Sans-Serif;
+	font: 36px "Univers", Sans-Serif;
 	font-style: oblique;
 }
 
@@ -1676,7 +1676,7 @@ button.closeBubble {
 	border-color: #648ACE transparent;
 	border-width: 0 0 27px 56px;
 	bottom: auto;
-	left: -51px;
+	left: -510px;
 	top: 125px;
 	transform: rotate(14deg);
 }

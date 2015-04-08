@@ -136,18 +136,20 @@ OpenGeoportal.MapController = function() {
 		});
 		
 		// Custom zoom extent for Wisconsin
-		var wiboundbox=[-10839354, 5160000, -9101306, 6014000] //Coordinates in Web Mercator
-		//var wiboundbox=[-10339354, 5234664, -9601306, 5989538]
-		var left = wiboundbox[0]
-		var bottom = wiboundbox[1]
-		var right = wiboundbox[2]
-		var top = wiboundbox[3]
-		var wisconsinbounds = new OpenLayers.Bounds(left,bottom,right,top)
-	
+		var wiboundbox=[-10839354, 5160000, -9101306, 6014000] //Coordinates in Web Mercator (left,bottom,right,top)
+		var wisconsinbounds = new OpenLayers.Bounds(wiboundbox[0],wiboundbox[1],wiboundbox[2],wiboundbox[3])
 		var wisconsinExtent = new OpenLayers.Control.Button({
 			displayClass: "zoomToWisconsin", trigger: function(){that.zoomToExtent(wisconsinbounds, true);},
 			type: OpenLayers.Control.TYPE_BUTTON,
 			title: "Zoom To Wisconsin", active: true
+		});
+		// Custom zoom extent for Great Lakes
+		var glboundbox=[-10404934, 4931973, -8343540, 6403885] //Coordinates in Web Mercator (left,bottom,right,top)
+		var greatlakesbounds = new OpenLayers.Bounds(glboundbox[0],glboundbox[1],glboundbox[2],glboundbox[3])
+		var greatlakesExtent = new OpenLayers.Control.Button({
+			displayClass: "zoomToGreatLakes", trigger: function(){that.zoomToExtent(greatlakesbounds, true);},
+			type: OpenLayers.Control.TYPE_BUTTON,
+			title: "Zoom To Great Lakes", active: true
 		});
 		// End customization
 
@@ -161,7 +163,8 @@ OpenGeoportal.MapController = function() {
 
 		panel.addControls([ 
 				globalExtent,
-				wisconsinExtent, 
+				wisconsinExtent,
+				greatlakesExtent, 
 				nav.previous, 
 				nav.next, 
 				zoomBox,

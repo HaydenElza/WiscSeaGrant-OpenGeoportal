@@ -19,8 +19,8 @@
 						<div id="cartTabTextInner">
 							Cart <span id="savedLayersNumberTab" class="savedLayersNumber">(0)</span>
 						</div>
-					</div>-->
-			</a></li>
+					</div>
+			</a></li>-->
 		</ul>
 		<div id="searchTab">
 			<%@include file="results.jspf"%>
