@@ -38,7 +38,6 @@ OpenGeoportal.Config.shareBbox="${shareBbox}";
 <body>
 
 	<%@include file="jspf/header.jspf"%>
-	<%@include file="jspf/search.jspf"%>
 	
 	<div id="container">
 		<div id="left_col" class="shadowRightOuter">

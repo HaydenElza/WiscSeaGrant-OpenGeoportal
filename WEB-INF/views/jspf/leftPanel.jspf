@@ -13,6 +13,13 @@
 						</div>
 					</div>
 			</a></li>
+			<li><a href="#advancedSearchTab">
+					<div id="advancedSearchTabText" class="tabText">
+						<div>
+							Search
+						</div>
+					</div>
+			</a></li>
 			<!--<li><a href="#cartTab">
 					<div id="cartTabText" class="tabText">
 						<div class="shoppingCartIcon"></div>
@@ -25,10 +32,16 @@
 		<div id="searchTab">
 			<%@include file="results.jspf"%>
 		</div>
-		<div id="cartTab">
+		<div id="advancedSearchTab">
+			<div id="advancedSearchHeader" class="tableHeader"></div>
+			<div id="advancedSearch">
+				<%@include file="search.jspf"%>
+			</div>
+		</div>
+		<!--<div id="cartTab">
 			<div id="cartHeader" class="tableHeader"></div>
 			<div id="cart"></div>
-		</div>
+		</div>-->
 	</div>
 </div>
 <div id="roll_right" class="slideVertical">
