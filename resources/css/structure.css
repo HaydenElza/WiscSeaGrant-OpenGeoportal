@@ -196,7 +196,7 @@ li.searchAttribution.ui-widget-content.ui-menu-divider {
 
 /* Header */
 #header {
-	height: 120px;
+	height: 75px;
 	background-color: #ffffff;
 	/*border-right: #CCCCCC solid 1px;
 	border-left: #CCCCCC solid 1px;*/
@@ -208,8 +208,8 @@ li.searchAttribution.ui-widget-content.ui-menu-divider {
 	cursor: pointer;
 	color: #492318;
 	font-size: 35px;
-	padding-left: 49px;
-	padding-top: 25px;
+	padding-left: 25px;
+	padding-top: 14px;
 	display: inline-block;
 }
 
@@ -565,6 +565,8 @@ textarea:focus {
 	font-size: 12px;
 	position: absolute;
 	z-index: 1500;
+	width: 100%;
+	padding-top: 25px;
 }
 
 .scrollFiller {
@@ -595,6 +597,10 @@ textarea:focus {
 	line-height: 22px;
 	padding-right: 6px;
 	width: 306px;
+}
+
+#whatField {
+  margin-left: 4px;
 }
 
 .labelText {
@@ -653,7 +659,7 @@ textarea:focus {
 }
 
 .searchFormRow.advancedSearch>input[type="search"] {
-	width: 192px;
+	width: 198px;
 	-webkit-appearance: textfield;
 }
 
@@ -662,8 +668,10 @@ textarea:focus {
 }
 
 #searchForm {
-	display: inline-block;
-	padding-left: 25px;
+	display: block;
+	width: 336px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .searchCol {
@@ -1662,6 +1670,7 @@ button.closeBubble {
 	right: auto;
 	top: -155px;
 	transform: scale(1.01);
+	display: none; /*temp removal of top arrow*/
 }
 
 .triangle-isosceles.left-arrow:after {
@@ -1718,6 +1727,7 @@ button.closeBubble {
 	right: auto;
 	top: -154px;
 	transform: scale(1.01);
+	display: none; /*temp removal of top arrow*/
 }
 
 .triangle-isoscelesBackground.left-arrowBackground:after {
@@ -1777,6 +1787,9 @@ button.closeBubble {
 	background: url("../media/ogp-sprite-uwsg.png") no-repeat scroll -141px -116px transparent;
 	width: 11px;
 	height: 13px;
+}
+.downloadIconInfoBubble {
+	display: inline-block;
 }
 .downloadControl{
 	background: url("../media/ogp-sprite-uwsg.png") no-repeat scroll -141px -116px transparent;

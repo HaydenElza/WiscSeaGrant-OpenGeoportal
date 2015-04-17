@@ -65,7 +65,7 @@ OpenGeoportal.Template = function() {
 
 	this.styledSelectBody = _.template(selectHtml);
 	
-	var selectAllHtml = '<div class="showAll offsetColor button">select all</div>';
+	var selectAllHtml = '<div class="showAll button">select all</div>';
 	this.selectAllCaption = _.template(selectAllHtml);
 
 	var simpleMenuHtml = '<li><a class="<%= className %>"><%= name %></a>'
@@ -231,14 +231,14 @@ OpenGeoportal.Template = function() {
 	var welcomeTextHtml = '<div id="welcomeText" class="welcomeText">'
 		+ '<h1>Welcome to GeoData@UWSeaGrant</h1>' 
 		+ '<p>There are two ways to begin your search:</p>'
-		+ '<ol><li>Enter information using the search field.</li>'
+		+ '<ol><li>Enter information using the search tab on the left.</li>'
 		+ '<li>Zoom in on a location using the map.</li></ol></div>';
 
 	this.welcomeText = _.template(welcomeTextHtml);
 	
 	var directionsTextHtml = '<div id="directionsText" class="directionsText">'
 		+ "<span>You can preview layers by clicking on the 'View' checkbox.</span><br/><br/>"
-		+ '<span>Layers can be added to the \'Cart\' by clicking on the </span><div class="saveControl notInCart exampleControl"></div><span> button.</span></div>';
+		+ '<span>Layers can be downloaded by clicking on the </span><div class="downloadIcon downloadIconInfoBubble"></div><span> button.</span></div>';
 	
 	this.directionsText = _.template(directionsTextHtml);
 };

@@ -2,13 +2,9 @@
 	background-image: url('../media/logo_seagrant.png');
 	background-repeat: no-repeat;
 	width: 121px;
-	height: 102px;
+	height: 61px;
 	padding: 0px 10px 0px 0px;
 	margin-top: -10px;
-}
-
-.searchBox {
-	top: 85px;
 }
 
 .uwseagrantIcon {

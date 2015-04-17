@@ -262,7 +262,7 @@ OpenGeoportal.Structure = function() {
 								}
 							});
 
-			jQuery(".slideVertical").animate(
+			/*jQuery(".slideVertical").animate(
 					{
 						"margin-top" : "+=" + hght * 3
 					},
@@ -272,10 +272,10 @@ OpenGeoportal.Structure = function() {
 						done : function() {
 							jQuery(document).trigger("search.resize");
 						}
-			});
+			});*/ //Search bar is on the side now so we do not need this
 
 		} else if (thisId === 'lessSearchOptions') {
-			jQuery(".slideVertical").animate(
+			/*jQuery(".slideVertical").animate(
 					{
 						"margin-top" : "-=" + hght * 3
 					},
@@ -286,7 +286,7 @@ OpenGeoportal.Structure = function() {
 						done : function() {
 							jQuery(document).trigger("search.resize");
 						}
-			});
+			});*/ //Search bar is on the side now so we do not need this
 
 			jQuery("#searchForm .advancedSearch.searchRow4").hide();
 			jQuery('#searchBox')
