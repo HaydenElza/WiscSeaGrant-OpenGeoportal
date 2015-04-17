@@ -189,7 +189,7 @@ OpenGeoportal.MapController = function() {
 		var initialZoom = 7;
 
 		if (jQuery('#' + this.containerDiv).parent().height() > 810) {
-			initialZoom = 8;
+			initialZoom = 7;
 			// TODO: this should be more sophisticated. width is also important
 			// initialZoom = Math.ceil(Math.sqrt(Math.ceil(jQuery('#' +
 			// this.containerDiv).parent().height() / 256)));
