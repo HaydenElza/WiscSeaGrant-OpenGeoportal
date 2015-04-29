@@ -201,16 +201,22 @@ li.searchAttribution.ui-widget-content.ui-menu-divider {
 	/*border-right: #CCCCCC solid 1px;
 	border-left: #CCCCCC solid 1px;*/
 	border-bottom: #999999 solid 1px;
-	min-width: 1050px;
+	min-width: 1244px;
 }
 
 #logo {
 	cursor: pointer;
-	color: #492318;
+	color: black;
 	font-size: 35px;
-	padding-left: 25px;
-	padding-top: 14px;
 	display: inline-block;
+	vertical-align: top;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 2px;
+	border-bottom: 4px solid gray;
+	margin-right: -4px;
+	border-left: 1px solid gray;
+	margin-left: 10px;
 }
 
 .offsetColor {
@@ -219,7 +225,7 @@ li.searchAttribution.ui-widget-content.ui-menu-divider {
 
 #top_menu {
 	float: right;
-	margin-top: 18px;
+	margin-top: 14px;
 	margin-right: 17px;
 }
 
@@ -1798,4 +1804,46 @@ button.closeBubble {
 }
 .downloadControl:hover {
 	cursor: pointer;
+}
+
+#topleft-menu {
+	display: inline-block;
+	width: auto;
+}
+#banner-container {
+	width: 75px;
+	height: 75px;
+	position: relative;
+	display: inline-block;
+	margin-top: -2px;
+}
+#banner{
+	width: 75px;
+	height: 75px;
+	position: absolute;
+}
+#noaa-bird {
+	width: 69px;
+	height: 49px;
+	padding: 3px;
+	position: absolute;
+}
+#header-links {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: -2px;
+}
+#header-links a {
+	padding: 11px 40px;
+	text-decoration: none;
+	font-size: 18px;
+	border: 1px solid gray;
+	border-bottom: 4px solid gray;
+	margin: -2px;
+	color: black;
+	display: inline-block;
+}
+#header-links a:hover {
+	color: white;
+	background-color: #1072BA;
 }
