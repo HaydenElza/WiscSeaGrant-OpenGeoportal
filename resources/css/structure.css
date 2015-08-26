@@ -196,7 +196,7 @@ li.searchAttribution.ui-widget-content.ui-menu-divider {
 
 /* Header */
 #header {
-	height: 75px;
+	height: 117px;
 	background-color: #ffffff;
 	/*border-right: #CCCCCC solid 1px;
 	border-left: #CCCCCC solid 1px;*/
@@ -225,8 +225,9 @@ li.searchAttribution.ui-widget-content.ui-menu-divider {
 
 #top_menu {
 	float: right;
-	margin-top: 14px;
+	margin-top: 7px;
 	margin-right: 17px;
+	color: white;
 }
 
 .separator {
@@ -234,7 +235,7 @@ li.searchAttribution.ui-widget-content.ui-menu-divider {
 }
 
 #top_menu a {
-	color: #000;
+	color: white;
 	text-decoration: none;
 }
 
@@ -243,14 +244,14 @@ li.searchAttribution.ui-widget-content.ui-menu-divider {
 }
 
 .headerButton {
-	color: #000;
+	color: white;
 	background: none;
 	border: none;
 	padding: 0;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
 .headerButton:hover {
-	color: #0755AC;
 }
 
 #welcome {
@@ -1810,40 +1811,47 @@ button.closeBubble {
 	display: inline-block;
 	width: auto;
 }
-#banner-container {
-	width: 75px;
-	height: 75px;
-	position: relative;
+#banner {
+	height:84px;
+}
+#banner-left {
+	background: url("../media/logo_uwsg_short.png") no-repeat;
+	width: 156px;
+}
+#banner-center {
+	background: url("../media/logo_uwsg_background.png");
+	width: calc(100% - 580px);
+	position: absolute;
+	min-width: 664px
+}
+#banner-right {
+	background: url("../media/logo_uwsg_long.png") no-repeat;
+	width: 424px;
+	float: right;
+}
+.banner {
+	height: 84px;
 	display: inline-block;
-	margin-top: -2px;
 }
-#banner{
-	width: 75px;
-	height: 75px;
-	position: absolute;
-}
-#noaa-bird {
-	width: 69px;
-	height: 49px;
-	padding: 3px;
-	position: absolute;
+.nav-bar {
+	height: 30px;
+	background-color: black;
+	background: url("../media/navbar_background.png");
+	background-size: contain;
+	border-top: 3px solid #404040;
 }
 #header-links {
 	display: inline-block;
-	vertical-align: top;
-	margin-left: -2px;
 }
 #header-links a {
-	padding: 11px 40px;
+	padding: 6px 20px;
 	text-decoration: none;
-	font-size: 18px;
-	border: 1px solid gray;
-	border-bottom: 4px solid gray;
-	margin: -2px;
-	color: black;
+	font-size: 14px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: white;
 	display: inline-block;
 }
 #header-links a:hover {
-	color: white;
-	background-color: #1072BA;
+	color: #cccccc;
 }
