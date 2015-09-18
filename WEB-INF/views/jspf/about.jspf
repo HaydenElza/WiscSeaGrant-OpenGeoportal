@@ -1,23 +1,35 @@
 <div id="about" class="dialog infoDialog">
-	<p>GeoData@Tufts is developed and maintained by Tufts University
-		Information Technology. Tufts is leading the development in
-		collaboration with Harvard of this open source, federated web
-		application to rapidly discover, preview, and retrieve geospatial data
-		from multiple repositories. GeoData@Tufts combines an intuitive,
-		map-based search interface along with traditional text-based metadata
-		search tools for rapid data discovery and for use in teaching,
-		learning, and research.</p>
+	<h3>Open Geoportal</h3>
 	<p>
-		GeoData@Tufts is part of <a href="http://www.opengeoportal.org">The
-			Open Geoportal</a>. The Open Geoportal is a consortium comprised of
+		The Wisconsin Coastal Atlas Uses <a href="http://www.opengeoportal.org">
+		Open Geoportal</a>. The Open Geoportal is a consortium comprised of
 		contributions of several universities and organizations to help
 		facilitate the discovery and acquisition of geospatial data across
-		many organizations and platforms. Current partners include: Harvard,
-		MIT, MassGIS, Princeton, Columbia, Stanford, UC Berkeley, UCLA, Yale,
-		and UConn. Built on open source technology, The Open Geoportal
+		many organizations and platforms. The Open Geoportal
 		provides organizations the opportunity to share thousands of
 		geospatial data layers, maps, metadata, and development resources
 		through a single common interface.
+	</p>
+	<h3>Wisconsin Coastal Atlas</h3>
+	<p>
+		<a href="http://www.wicoastalatlas.net/">The Wisconsin Coastal Atlas</a> 
+		is an innovative web resource that helps people 
+		better understand coastal issues, share coastal data, and inform 
+		decision-making about sustainable use of the Great Lakes. It is intended 
+		for use by coastal resource managers, planners, researchers, educators, 
+		tourists, and citizen scientists. The atlas is organized into four sections: 
+		<a href="http://www.wicoastalatlas.net/Default.aspx?tabid=62">maps</a>, 
+		<a href="http://www.wicoastalatlas.net/Default.aspx?tabid=63">catalog</a>, 
+		<a href="http://www.wicoastalatlas.net/Default.aspx?tabid=64">tools</a>, and 
+		<a href="http://www.wicoastalatlas.net/Default.aspx?tabid=65">learn</a>. 
+		A gallery of interactive maps provides 
+		customized perspectives related to specific coastal issues in Wisconsin. 
+		Users can search for geospatial data through interfaces that connect to 
+		catalogs maintained by other coastal data custodians. The atlas serves as 
+		a gateway to spatial decision support tools relevant to Great Lakes 
+		management and provides access to educational resources about coastal issues 
+		in Wisconsin. The atlas is built with an open architecture that allows easy 
+		addition of new maps, data, and tools.
 	</p>
 	<p>
 		<%@include file="mailto.jspf"%>

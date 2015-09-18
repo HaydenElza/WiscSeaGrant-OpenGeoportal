@@ -1,3 +1,136 @@
 .uwseagrantIcon {
 	background: url("../media/ogp-institutions.png") no-repeat scroll -55px -34px transparent;
 }
+
+/* Dialog Windows */
+.ui-widget-header {
+	background: url("../media/navbar_background.png");
+}
+.ui-dialog .ui-dialog-title {
+	color: #fff;
+	margin: 0;
+	padding: 6px 0 6px 12px;
+	width: 80%;
+}
+.ui-dialog .ui-dialog-titlebar {
+	padding: 0;
+}
+.ui-dialog-titlebar button.ui-dialog-titlebar-close {
+	background: none;
+	margin: 0;
+	right: 0;
+}
+.ui-dialog .ui-dialog-titlebar-close .ui-icon {
+	background: url("../media/ogp-sprite.png") no-repeat scroll -10px -116px rgba(0, 0, 0, 0);
+	margin: 6px;
+	position: relative;
+	left: 0;	
+	right: 0;
+	float: right;
+}
+.ui-button-icon-only .ui-button-text, .ui-button-icons-only .ui-button-text {
+	display: none;
+}
+.ui-dialog-titlebar button.ui-dialog-titlebar-close {
+	width: 30px;
+	top: 0;
+	height: 30px;
+	position: relative;
+	float: right;
+}
+
+/* Navigation Bubbles */
+.triangle-isosceles.top-arrow, .triangle-isosceles.left-arrow {
+	background: linear-gradient(#8D8E8F, #3B3B3C) repeat scroll 0 0 transparent;
+}
+.triangle-isoscelesBackground.top-arrowBackground, .triangle-isoscelesBackground.left-arrowBackground {
+	background-color: #404040;
+}
+.triangle-isosceles.left-arrow:after {
+	border-color: #616162 transparent;
+}
+.triangle-isoscelesBackground:after {
+	border-color: #404040 transparent;
+}
+.welcomeText, .infoBubbleText label {
+	padding: 20px;
+}
+.infoBubbleText h1 {
+	font-style: normal;
+}
+
+/* Footer */
+#footerLogos>div {
+	line-height: 40px;
+	vertical-align: text-top;
+}
+#footer, #footerLogos {
+	height: 40px;
+}
+/*#footerLogos .institutionLogo {
+	background: url("../media/logo_seagrant_wi.png") no-repeat transparent;
+	height: 30px;
+	width: 62px;
+	margin: 0;
+	padding: 5px 10px 10px 10px;
+}*/
+#footerLogos .institutionLogo {
+	height: 40px;
+}
+#footerLogos {
+	margin-left: 0;
+}
+#sgLogo {
+	padding: 5px 10px 5px 10px;
+	position: relative;
+}
+
+.gisLogo {
+	-webkit-transition: all 0.5s ease; /* Safari */
+	transition: all 0.5s ease;
+	line-height: 40px;
+	padding-left: 7px;
+	font-family: MiloWeb,Verdana, arial, sans-serif;
+}
+#footerInfo a {
+	-webkit-transition: all 0.5s ease; /* Safari */
+	transition: all 0.5s ease;
+	color: black;
+	font-family: MiloWeb,Verdana, arial, sans-serif;
+	position: absolute;
+	right: 0px;
+	padding: 0 10px 0 10px;
+	line-height: 40px;
+}
+.gisLogo:hover, #footerInfo a:hover {
+	-webkit-transition: all 0.5s ease; /* Safari */
+	transition: all 0.5s ease;
+	background-color: #acacac;
+	border-radius: 3px;
+	color: white;
+}
+#ogpLogo {
+	height: 22px;
+	position: relative;
+	top: 9px;
+	padding-left: 10px;
+	float: right;
+}
+
+/* OpenLayers Google info */
+.olLayerGooglePoweredBy {
+	display: none; /* redundant */
+}
+
+/* Buttons 
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+	color: white;
+	background: #3A3B3B;
+}*/
+
+.vert-tab-num {
+	text-align: center;
+	font-family: MiloWeb,Verdana, arial, sans-serif;
+	font-weight: bold;
+	width: 23px;
+}

@@ -1,17 +1,17 @@
 <div id="footer">
-	<!-- <div id="footerLogos">
-		<div class="institutionLogo" title="Tufts"
-			onclick="location.href='http://tufts.edu'"></div>
-		<div class="itLogo infoLinks" title="TTS"
-			onclick="location.href='https://it.tufts.edu/'">Technology
-			Services</div>
-		<div class="gisLogo infoLinks" title="GIS@Tufts"
-			onclick="location.href='http://gis.tufts.edu'">GIS@Tufts.edu</div>
-		
-	</div>-->
-	<span id="footerInfo"> <span id="ogpLink" class="infoLinks"
-		onclick="location.href='http://www.opengeoportal.org'">Powered
-			by OpenGeoportal</span>
-	</span>
+	<div id="footerLogos">
+		<!--<div class="institutionLogo" title="UW Sea Grant"
+			onclick="location.href='http://seagrant.wisc.edu/'"></div>-->
+		<div class="institutionLogo">
+			<a class="infoLinks" href="http://seagrant.wisc.edu/"><img id="sgLogo" src="./resources/media/logo_seagrant_wi.png"></a>
+		</div>
+		<!--<div class="itLogo infoLinks" title="WCA"
+			onclick="location.href='http://wicoastalatlas.net/'">Wisconsin Coastal Atlas</div>-->
+		<!--<div class="gisLogo infoLinks" title="maps@UWSeaGrant"
+			onclick="location.href='http://maps.aqua.wisc.edu'">maps.aqua.wisc.edu</div>-->
+	</div>
+	<div id="footerInfo">
+		<a id="ogpLink" class="infoLinks" href="http://www.opengeoportal.org">Powered by<img id="ogpLogo" src="./resources/media/OGP_logo.png"></a>
+	</div>
 </div>
 

@@ -254,6 +254,7 @@ OpenGeoportal.Views.Query = Backbone.View
 			fireSearch : function() {
 
 				jQuery(document).trigger("fireSearch");
+				jQuery("#tabs").tabs({active : 0});  // Switch to results tab after search
 			},
 
 			searchTypeHandler : function() {
@@ -306,7 +307,7 @@ OpenGeoportal.Views.Query = Backbone.View
 						jQuery(event.target).blur();
 						that.fireSearchWithZoom();
 						jQuery(event.target).focus();
-
+						
 					}
 				});
 			},

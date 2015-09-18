@@ -46,5 +46,6 @@
 </div>
 <div id="roll_right" class="slideVertical">
 	<button class="arrow_right button"></button>
+	<div id="resultsNumber" class="resultsNumber vert-tab-num"> 0 </div>
 </div>
 

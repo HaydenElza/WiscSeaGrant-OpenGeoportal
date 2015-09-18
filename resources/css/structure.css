@@ -820,6 +820,8 @@ textarea:focus {
 	height: 30px;
 	background: #FFF;
 	border: #CCCCCC solid 1px;
+	border-left: 0;
+	border-right: 0;
 	font-size: 13px;
 	bottom: 0;
 	width: 100%;
@@ -831,6 +833,7 @@ textarea:focus {
 	margin-left: 20px;
 	height: 30px;
 	overflow: hidden;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 #footerLogos>div {
@@ -1844,6 +1847,7 @@ button.closeBubble {
 	display: inline-block;
 }
 #header-links a {
+	transition: all 0.5s ease;
 	padding: 6px 20px;
 	text-decoration: none;
 	font-size: 14px;
@@ -1853,5 +1857,6 @@ button.closeBubble {
 	display: inline-block;
 }
 #header-links a:hover {
+	transition: all 0.5s ease;
 	color: #cccccc;
 }
